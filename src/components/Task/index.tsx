@@ -1,6 +1,6 @@
 import { Container, TaskDelete, TaskDone, TaskText } from "./styles";
 import { Feather } from "@expo/vector-icons";
-
+import React from "react";
 type Props = {
   title: string;
   status: boolean;
