@@ -13,7 +13,13 @@ export function Task({ title, status, onCheck, onDelete }: Props) {
     <Container>
       <TaskDone
         onPress={onCheck}
-        style={status ? { backgroundColor: "#0E9577" } : {}}
+        style={
+          status
+            ? { backgroundColor: "#0E9577" }
+            : {
+                backgroundColor: "#3D3D4D",
+              }
+        }
       >
         {!status && <Feather name="square" size={24} color="white" />}
         {status && <Feather name="check-square" size={24} color="white" />}
